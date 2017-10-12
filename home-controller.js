@@ -1,8 +1,13 @@
 angular.module('app.home', [])
 
-    .controller("homeCtrl", function($scope, $translate, Lightbox) {
+    .controller("homeCtrl", function ($scope, $translate, Lightbox) {
         //variable to store selected language
+        $scope.tittles = ['home', 'about'];
+        $scope.selected = 0;
 
+        $scope.select= function(index) {
+            $scope.selected = index;
+        };
         $scope.arts = [
             {
                 'url': 'resources/images/pic1_b.jpg',

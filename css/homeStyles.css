@@ -2,27 +2,59 @@ h2 {
     text-transform: uppercase;
 }
 
+/*a:nth-child(2n+1){*/
+/*border-right: 1px solid black;*/
+/*}*/
+.sel {
+    font-weight: bold;
+    color: white;
+    padding: 1%;
+    background: #35a58b;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+a {
+    color: white;
+}
+
+a:focus, a:hover {
+    color: white;
+    text-decoration: none;
+}
+
 header {
     width: 100%;
-    height: 250px;
-    background-color: #2dffa7;
+    height: 366px;
+    background-image: url('../resources/images/banner_1.png');
     margin-bottom: 2%;
+    position: relative;
 }
 
 .icon_game {
     width: 200px;
     height: 200px;
     margin-bottom: 10px;
-    background-color: orange;
+    background-image: url('../resources/images/icon_1.jpg');
+    background-size: contain;
     border-radius: 25px;
 }
 
 .icon_shop {
-    width: 200px;
-    height: 75px;
-    background-color: black;
+    width: 218px;
+    background-size: cover;
     margin-bottom: 10px;
-    border-radius: 10px;
+
+}
+
+.google {
+    height: 75px;
+    background-image: url('../resources/images/icon_googleplay.png');
+}
+
+.windows {
+    height: 88px;
+    background-image: url('../resources/images/icon_windowsStore.png');
 }
 
 .maska {
@@ -119,4 +151,15 @@ header {
 
 .maska:hover .p {
     transform: translateY(0px);
+}
+
+.lang_box {
+    margin-right: 2%;
+    display: inline-block;
+    width: 46%
+}
+
+.lang_box > div {
+    float: right;
+!important;
 }

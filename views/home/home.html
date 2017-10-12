@@ -1,0 +1,51 @@
+<!-------------------------------------------   GAME REVIEW -------------------------------------------->
+<div class="content_text">
+    <div class="icon_box">
+        <div class="icon_game"></div>
+        <div class="icon_shop google"></div>
+        <div class="icon_shop windows"></div>
+    </div>
+    <div>
+        <h2><b>Time to tube.</b></h2>
+        <p class="text_review">
+            {{'text' | translate}}
+        </p>
+    </div>
+</div>
+
+<!-------------------------------------------  END GAME REVIEW -------------------------------------------->
+
+
+
+
+<!-------------------------------------------   VIDEO  -------------------------------------------->
+
+<div class="video_box">
+    <h2>{{'tittle1' | translate}}</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/FHTphWfHzPQ" frameborder="0" allowfullscreen></iframe>
+</div>
+<!-------------------------------------------  END  VIDEO  -------------------------------------------->
+
+
+
+
+
+<!-------------------------------------------  GALLERY  -------------------------------------------->
+<div class="gallery_box">
+    <h2>{{'tittle2' | translate}}</h2>
+
+    <div style="display: flex; margin: 40px auto; justify-content: flex-start; max-width: 600px; min-width: 400px; flex-wrap: wrap">
+
+
+        <div class="artIcon" ng-repeat="art in arts" ng-style="{'background-image': 'url(resources/images/{{art.thumbUrl}}.jpg)'}"  ng-click="openLightboxModal($index)">
+            <div class="maska">
+                <p style="color: white; text-transform: uppercase;"><span class="glyphicon glyphicon-search"></span></p>
+            </div>
+        </div>
+
+
+    </div>
+
+</div>
+
+<!-------------------------------------------  END  GALLERY -------------------------------------------->
