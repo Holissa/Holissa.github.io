@@ -1,1 +1,33 @@
 <h2>{{'tittle3' | translate}}</h2>
+<p>Над проектом работало всего два человека. На данный момент реализована демо-версия из 9 уровней. В будущем планируется развитие игры
+    - больше разнообразных уровней, добавления сложности прохождения, улучшение графики и т.п.
+</p>
+<p>Если вам понравился наш проект, у вас есть какие-то вопросы или пожелания будем рады вашим письмам. Также будем благодарны
+поддержке проекта</p>
+<h2>Напишите нам</h2>
+<div class="container_f">
+    <!--<form action="/action_page.php">-->
+    <form>
+
+        <label for="fname">Your Name</label>
+        <input type="text" id="fname" ng-model="name" placeholder="Your name..">
+        Hello <span ng-bind="name"></span>!
+
+        <label for="lname">Your Email</label>
+        <input type="text" id="lname" ng-model="mail" placeholder="Your name..">
+
+        <label for="country">Subject</label>
+        <input type="text" id="country" ng-model="subject" placeholder="Your name..">
+        <!--<select id="country" name="country">-->
+            <!--<option value="australia">Australia</option>-->
+            <!--<option value="canada">Canada</option>-->
+            <!--<option value="usa">USA</option>-->
+        <!--</select>-->
+
+        <label for="subject">Message</label>
+        <textarea id="subject" name="subject" placeholder="sdsdsd" ng-model="message" style="height:200px"></textarea>
+
+        <input type="submit" value="Submit" ng-click="sendEmail(name, mail, subject, message)">
+
+    </form>
+</div>

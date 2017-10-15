@@ -1,11 +1,35 @@
 angular.module('app.home', [])
 
-    .controller("homeCtrl", function ($scope, $translate, Lightbox) {
+    .controller("homeCtrl", function ($scope, $translate, Lightbox, $http) {
         //variable to store selected language
         $scope.tittles = ['home', 'about'];
         $scope.selected = 0;
+        $scope.name = null;
+        $scope.mail = null;
+        $scope.message = null;
+        $scope.subject = null;
 
-        $scope.select= function(index) {
+        $scope.sendEmail = function (a,b,c) {
+            var mailData = {
+                to: 'golympetr@gmail.com',
+                subject: b,
+                text: c}
+
+            $http.post('/sendemail', mailData).success(function(data){
+                if(data.status == 'success'){
+                    console.log("Email send successfully");
+                }
+                else{
+                    console.log("Some error occour while sending email");
+                }
+            });
+        };
+
+        $scope.$watch("name", function () {
+            console.log("**** reference checkers $watch ****")
+        });
+
+        $scope.select = function (index) {
             $scope.selected = index;
         };
         $scope.arts = [

@@ -37,13 +37,16 @@
 <div class="gallery_box">
     <h2>{{'tittle2' | translate}}</h2>
 
-    <div style="display: flex; margin: 40px auto; justify-content: flex-start; max-width: 600px; min-width: 400px; flex-wrap: wrap">
+    <div class="box_artIcon">
 
 
-        <div class="artIcon" ng-repeat="art in arts" ng-style="{'background-image': 'url(resources/images/{{art.thumbUrl}}.jpg)'}"  ng-click="openLightboxModal($index)">
+        <!--<div class="artIcon" ng-repeat="art in arts" ng-style="{'background-image': 'url(resources/images/{{art.thumbUrl}}.jpg)'}"  ng-click="openLightboxModal($index)">-->
+        <div class="artIcon" ng-repeat="art in arts"   ng-click="openLightboxModal($index)">
+
             <div class="maska">
                 <p style="color: white; text-transform: uppercase;"><span class="glyphicon glyphicon-search"></span></p>
             </div>
+            <img ng-src="resources/images/{{art.thumbUrl}}.jpg" style="width: 100%; height: 100%;">
         </div>
 
 
