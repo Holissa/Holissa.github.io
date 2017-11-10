@@ -1,4 +1,3 @@
-// var app = angular.module('myApp', ['pascalprecht.translate', 'bootstrapLightbox', 'app.home']);
 angular.module('myApp', [
     'pascalprecht.translate',
     'ui.router',
@@ -23,6 +22,18 @@ angular.module('myApp', [
         templateUrl: 'components/header.html',
         controller: 'homeCtrl'
     })
+
+    .component('myFooter', {
+        templateUrl: 'components/footer.html',
+        controller: 'homeCtrl'
+    })
+
+    .component('sticker', {
+        templateUrl: 'components/sticker.html',
+        controller: 'homeCtrl'
+    })
+    
+    
 
     .config(function ($stateProvider, $urlRouterProvider) {
         $urlRouterProvider

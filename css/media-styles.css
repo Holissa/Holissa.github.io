@@ -1,0 +1,145 @@
+@media screen and (max-width: 1000px) {
+    .video_box {
+        width: 100%;
+        padding-bottom: 50%;
+    }
+
+
+}
+
+@media screen and (max-width: 1200px) {
+    .gallery_box {
+        width: 100%;
+        margin-top: 20%;
+    !important;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+    .text_review {
+        font-size: 18px;
+    }
+
+    header {
+        display: none;
+    }
+
+    .gallery_box {
+        width: 100%;
+        margin-top: 20%;
+    !important;
+    }
+
+    .icon_box {
+        width: 40%;
+    !important;
+
+    }
+
+    .ipad_menu {
+        display: flex;
+        background-color: #7adcc1;
+    }
+
+    .phone_footer {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        /*width: 34%;*/
+        width: 60%;
+        margin: auto;
+    }
+
+    .phone_author {
+        display: block;
+    }
+
+    .pc_footer {
+        display: none;
+    }
+
+    footer {
+        height: 150px;
+        /*border-top: none;*/
+    }
+
+    .content {
+        padding-top: 25%;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+    .icon_box {
+        display: none;
+    }
+
+    .gallery_box {
+        margin: 40% auto;
+    }
+
+    .artIcon {
+        width: 49%;
+        height: 49%;
+    }
+}
+
+@media screen and (max-width: 510px) {
+    .icon_box {
+        display: none;
+    }
+
+    .mobileV {
+        display: block;
+    }
+
+    .gallery_box {
+        margin: 40% auto;
+    }
+
+    hr {
+        display: block;
+    }
+
+    h2 {
+        text-align: center;
+    }
+}
+
+@media screen and (max-device-width: 500px) {
+    .icon_box {
+        display: none;
+    }
+
+    hr {
+        display: block;
+    }
+
+    .ipad_menu {
+        display: flex;
+        background-color: #7adcc1;
+
+    }
+
+    .gallery_box {
+        width: 100%;
+        margin-top: 20%;
+    !important;
+    }
+
+    .pc_menu {
+        display: none;
+    }
+
+}
+
+@media screen and (max-width: 900px) {
+    nav {
+        font-size: 20px;
+    }
+
+    a {
+        padding: 2% 3.5%;
+    }
+}

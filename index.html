@@ -21,55 +21,26 @@
     <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-1.3.2.js"></script>
     <script src="js/angular-bootstrap-lightbox.js"></script>
 
-    <!--<script src="mail.js"></script>-->
-    <!--<script data-main="scripts/main" src="node_modules/requirejs/require.js"></script>-->
 
     <link rel="stylesheet" href="css/angular-bootstrap-lightbox.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/homeStyles.css">
+    <link rel="stylesheet" href="css/media-styles.css">
     <link rel="stylesheet" href="css/about-styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
-<!--<script type="text/javascript">-->
-    <!--$(document).ready(function(){-->
-        <!--$("#form").submit(function() { //устанавливаем событие отправки для формы с id=form-->
-            <!--var form_data = $(this).serialize(); //собераем все данные из формы-->
-            <!--$.ajax({-->
-                <!--type: "POST", //Метод отправки-->
-                <!--url: "send.php", //путь до php фаила отправителя-->
-                <!--data: form_data,-->
-                <!--success: function() {-->
-                    <!--//код в этом блоке выполняется при успешной отправке сообщения-->
-                    <!--alert("Ваше сообщение отпрвлено!");-->
-                <!--}-->
-                <!--});-->
-        <!--});-->
-    <!--});-->
-<!--</script>-->
-<body ng-controller="homeCtrl">
 
-<div class="ipad_menu">
-    <img src="resources/images/logo.png">
-    <nav>
-        <a href="">HOME</a>
-        <a href="" >ABOUT</a>
-    </nav>
-</div>
+<body ng-controller="homeCtrl">
 
 
 <my-header></my-header>
 
-
-
 <div ui-view class="content"></div>
 
+<sticker></sticker>
 
-
-<footer>
-    <div class="ipad_lang">
-        <p> Choose language:</p>
-        <span class="flag-icon flag-icon-ru" ng-click="changeLang('ru')" style=" margin-left: 6px;"></span>
-        <span class="flag-icon flag-icon-gb" ng-click="changeLang('en')" ></span>
-    </div>
-</footer>
+<my-footer></my-footer>
 
 
 </body>

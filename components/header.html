@@ -1,12 +1,18 @@
-<header>
-    <div style="margin-top: 28px; width: 100%; position: absolute;" class="menu_pc">
-        <nav style="text-transform: uppercase;  margin-left: 2%; display: inline-block; width: 50%; float: left; color: white">
-            <a ui-sref={{tittle}} ng-repeat="tittle in tittles" ng-click="select($index)" ng-class="{sel: $index == selected}">  {{tittle}} </a>
-        </nav>
+<div class="ipad_menu">
+    <img src="resources/images/logo.png">
+    <nav>
+        <a ui-sref={{tittle}} ng-repeat="tittle in tittles" ng-class="{sel: isActive(tittle)}"> {{tittle}} </a>
+    </nav>
+</div>
 
+<header>
+    <div class="pc_menu">
+        <nav>
+            <a ui-sref={{tittle}} ng-repeat="tittle in tittles" ng-class="{sel: isActive(tittle)}"> {{tittle}} </a>
+        </nav>
         <div class="lang_box">
-            <span class="flag-icon flag-icon-ru" ng-click="changeLang('ru')" style="float: right; margin-left: 6px; font-size: 18px;"></span>
-            <span class="flag-icon flag-icon-gb" ng-click="changeLang('en')" style="float: right; font-size: 18px"></span>
+            <span class="flag-icon flag-icon-ru" ng-click="changeLang('ru')"></span>
+            <span class="flag-icon flag-icon-gb" ng-click="changeLang('en')"></span>
         </div>
 
     </div>

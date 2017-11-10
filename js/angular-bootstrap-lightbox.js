@@ -24,7 +24,7 @@ angular.module('bootstrapLightbox').run(['$templateCache', function($templateCac
     'use strict';
 
     $templateCache.put('lightbox.html',
-        "<div class=modal-body ng-swipe-left=Lightbox.nextImage() ng-swipe-right=Lightbox.prevImage()><div class=lightbox-nav><button class=close aria-hidden=true ng-click=$dismiss()>×</button><div class=btn-group ng-if=\"Lightbox.images.length > 1\"><a class=\"btn btn-xs btn-default\" ng-click=Lightbox.prevImage()>‹ Previous</a> <a ng-href={{Lightbox.imageUrl}} target=_blank class=\"btn btn-xs btn-default\" title=\"Open in new tab\">Open image in new tab</a> <a class=\"btn btn-xs btn-default\" ng-click=Lightbox.nextImage()>Next ›</a></div></div><div class=lightbox-image-container><div class=lightbox-image-caption><span>{{Lightbox.imageCaption}}</span></div><img ng-if=!Lightbox.isVideo(Lightbox.image) lightbox-src={{Lightbox.imageUrl}}><div ng-if=Lightbox.isVideo(Lightbox.image) class=\"embed-responsive embed-responsive-16by9\"><video ng-if=!Lightbox.isSharedVideo(Lightbox.image) lightbox-src={{Lightbox.imageUrl}} controls autoplay></video><embed-video ng-if=Lightbox.isSharedVideo(Lightbox.image) lightbox-src={{Lightbox.imageUrl}} ng-href={{Lightbox.imageUrl}} iframe-id=lightbox-video class=embed-responsive-item><a ng-href={{Lightbox.imageUrl}}>Watch video</a></embed-video></div></div></div>"
+        "<button class=close aria-hidden=true ng-click=$dismiss() style=\"position: absolute; z-index: 6; left: 95% \"><span class=\"glyphicon glyphicon-remove\"></span></button><div class=modal-body ng-swipe-left=Lightbox.nextImage() ng-swipe-right=Lightbox.prevImage()><div class=lightbox-nav style=\"position: absolute; z-index: 5; top: 50%; width: 95%\"><div class=btn-group ng-if=\"Lightbox.images.length > 1\" style=\"width: 100%\"><a ng-click=Lightbox.prevImage() style=\"float: left\"><div class=but_galllery style=\"background: url('resources/images/but_l.png')center / cover;\" ></div></a>  <a  ng-click=Lightbox.nextImage() style=\"float: right\"><div class=but_galllery style=\"background: url('resources/images/but_r.png')center / cover;\"></div></a></div></div><div class=lightbox-image-container><div class=lightbox-image-caption><span>{{Lightbox.imageCaption}}</span></div><img ng-if=!Lightbox.isVideo(Lightbox.image) lightbox-src={{Lightbox.imageUrl}}><div ng-if=Lightbox.isVideo(Lightbox.image) class=\"embed-responsive embed-responsive-16by9\"><video ng-if=!Lightbox.isSharedVideo(Lightbox.image) lightbox-src={{Lightbox.imageUrl}} controls autoplay></video><embed-video ng-if=Lightbox.isSharedVideo(Lightbox.image) lightbox-src={{Lightbox.imageUrl}} ng-href={{Lightbox.imageUrl}} iframe-id=lightbox-video class=embed-responsive-item><a ng-href={{Lightbox.imageUrl}}>Watch video</a></embed-video></div></div></div>" //!!!!!!!STYLE
     );
 
 }]);
@@ -650,7 +650,10 @@ angular.module('bootstrapLightbox').directive('lightboxSrc', ['$window',
                     // resize the image
                     element.css({
                         'width': imageDisplayDimensions.width + 'px',
-                        'height': imageDisplayDimensions.height + 'px'
+                        'height': imageDisplayDimensions.height + 'px',
+                        'margin-top': 13 + 'px'
+                        // 'padding-left': 20 + 'px',
+                        // 'padding-right': 20 + 'px'
                     });
 
                     // setting the height on .modal-dialog does not expand the div with the

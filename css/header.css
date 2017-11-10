@@ -1,0 +1,77 @@
+.ipad_menu {
+    display: none;
+    width: 100%;
+    background: white;
+    position: fixed;
+    z-index: 2;
+}
+
+.ipad_menu > img {
+    width: 23%;
+    height: 41%;
+    margin-left: 25px;
+}
+
+.ipad_menu > nav {
+    display: inline-block;
+    width: 67%;
+    line-height: 3;
+    text-transform: uppercase;
+}
+
+.ipad_menu > nav > a {
+    color: white;
+    float: right;
+}
+
+.pc_menu {
+    margin-top: 28px;
+    width: 100%;
+    position: absolute;
+}
+
+.pc_menu > nav {
+    text-transform: uppercase;
+    margin-left: 2%;
+    display: inline-block;
+    width: 50%;
+    float: left;
+    color: white;
+}
+
+.pc_menu > nav > .sel, .sel {
+    font-weight: bold;
+    color: white;
+    /*background: #35a58b;*/
+    background: #efc423;
+    border-radius: 8px;
+    opacity: 1;
+}
+
+.pc_menu > nav > a {
+    opacity: 0.8;
+}
+
+.pc_menu > nav > a:hover {
+    opacity: 1;
+}
+
+.lang_box {
+    margin-right: 2%;
+    display: inline-block;
+    width: 46%
+}
+
+.lang_box > div {
+    float: right;
+!important;
+}
+
+.lang_box > span {
+    float: right;
+    font-size: 18px;
+}
+
+.lang_box > span:first-child {
+    margin-left: 6px;
+}
