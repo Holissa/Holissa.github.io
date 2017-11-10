@@ -21,6 +21,8 @@
         font-size: 18px;
     }
 
+
+
     header {
         display: none;
     }
@@ -35,6 +37,9 @@
         width: 40%;
     !important;
 
+    }
+    .sticker{
+        display: none;
     }
 
     .ipad_menu {
@@ -107,13 +112,25 @@
     }
 }
 
-@media screen and (max-device-width: 500px) {
+@media screen and (max-width: 500px) {
     .icon_box {
         display: none;
     }
 
     hr {
         display: block;
+    }
+
+    .text_box{
+        text-align: left;
+    }
+
+    .text_review{
+        padding: 0 4%;
+    }
+
+    .content_text{
+        padding: 0;
     }
 
     .ipad_menu {
@@ -124,7 +141,7 @@
 
     .gallery_box {
         width: 100%;
-        margin-top: 20%;
+        margin-top: 28%;
     !important;
     }
 
