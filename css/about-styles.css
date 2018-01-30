@@ -18,8 +18,9 @@
 
 .container_f {
     border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
+   border: 1px solid #dedbdb;
+    padding: 15px;
+   margin: 20px 0;
 }
 
 /* Style inputs with type="text", select elements and textareas */

@@ -14,7 +14,7 @@
   "tittle1": "Video",
   "tittle2": "Screenshots/arts",
   "tittle3": "Who we are",
-  "par1_2":"&&& is a small indie developers team. Our first game is Time to Tube! We hope you like it.",
+  "par1_2":"'SeVa games' is a small indie developers team. Our first game is Time to Tube! We hope you like it.",
   "par2_2":"The game has only 9 levels! And now we are working to improve it and plan to release a second version, which will have a lot of different levels, more great graphics, new game modes and more.",
   "par3_2":"If you like this game, please rate it and leave a comment!  We thank you for visiting of our web-site, and will be very grateful for your comments, wishes and desire to cooperate with us! Thank you for your help!",
   "par4_2":"The game was created without any financial support, only at the initiative of the development team.Donations Welcome! If you like our project please support us, we thank you so much! <3",
@@ -32,5 +32,9 @@
   "dev_name_2":"Sergey Lesnikov",
   "dev_name_3":"Sergey Lesnikov, Vasilisa Chekhonina",
   "dev_name_4":"Sergey Lesnikov",
-  "contact_tittle": "Contact"
+  "contact_tittle": "Contact",
+  "form_titrle_1":"Name",
+  "form_titrle_2":"Subject",
+  "form_titrle_3":"Message",
+  "form_button":"Submit"
 }
